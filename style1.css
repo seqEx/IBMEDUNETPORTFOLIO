@@ -1,0 +1,293 @@
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+        :focus {
+      outline: none;
+    }
+
+        .navbar {
+            background-color:#fc8eac;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0;
+            animation: slideIn 2s forwards;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            opacity: 0;
+  transform: translateY(20px);
+        }
+
+        .hero-name {
+            font-size: 36px;
+            opacity: 0;
+  transform: translateY(20px);
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start with zero opacity and moved down slightly */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End with full opacity and original position */
+  }
+}
+
+/* Apply the animation to the elements with data-aos="fade-up" attribute */
+.hero-title[data-aos="fade-up"],
+.hero-name[data-aos="fade-up"] {
+  animation: fade-up 1s ease forwards; /* Adjust the animation duration and easing function */
+}
+
+/* Add a delay to the subtitle animation */
+.hero-name[data-aos="fade-up"] {
+  animation-delay: 200ms; /* Adjust the delay duration (200ms = 0.2s) */
+}
+
+        .container {
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            margin-bottom: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .card-text {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 60px;
+        }
+        .personal-section {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .contact-form {
+            margin-top: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group textarea {
+            height: 120px;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #de5d83;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #3498db;
+        }
+
+        .project-section {
+            margin-top: 60px;
+        }
+
+        .project-description {
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .project-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-image {
+    width: 300px; /* Adjust the size of the circular image as needed */
+  height: 300px; /* Should be the same as the width to create a circle */
+  border-radius: 50%;
+  overflow: hidden; /* Clip the image to the circular shape */
+  margin-right: 20px;
+}
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire circular container */
+}
+.project-description {
+  flex: 1; /* This will make the paragraph take up the remaining space */
+}
+
+.about-me {
+  text-align: center;
+  padding: 50px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: palevioletred; /* Choose your desired title color */
+}
+
+.description {
+  font-size: 18px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  white-space: pre-wrap;
+  overflow: hidden;
+  border-right: 2px solid palevioletred; /* Choose the color of the animated underline */
+  padding-right: 10px;
+}
+
+/* Animation styles */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: pink; /* Choose the color of the animated underline while blinking */
+  }
+}
+
+.description[data-text]::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 28px; /* Adjust the height of the animated underline */
+  vertical-align: middle;
+  margin-left: 5px; /* Adjust the distance between the text and the animated underline */
+  background-color: pink; /* Choose the color of the animated underline */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+

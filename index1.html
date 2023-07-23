@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#s">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#c">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <img src="https://th.bing.com/th/id/R.cc74c44e5fd0d491b3e8b8e865a9ddd1?rik=%2f3Q%2ftrv5AaJNpQ&riu=http%3a%2f%2fwww.srpbratstvo.org%2fwp-content%2fuploads%2f2020%2f09%2ffemale-using-laptop.jpg&ehk=%2fU1K9UGIl4M2Irn78SyAByodBJ7g511DjB2vJrphIvk%3d&risl=&pid=ImgRaw&r=0" alt="Portfolio Background Image">
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">Varsha</h1>
+            <h2 class="hero-name" data-aos="fade-up" data-aos-delay="200">Web Designer</h2>
+        </div>
+    </div>
+
+      
+    <div id="a" class="about-me">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p class="description" data-text="I am a passionate individual who loves learning and exploring new technologies. 
+        I am proficient in several programming languages and I'm always eager to learn more. 
+        Apart from programming, I enjoy reading, traveling, and playing video games.  
+        With each project I undertake, I try to make a positive impact on society and help create a better tomorrow. 
+        If you want to know more about me or have any questions, feel free to reach out."> 
+        </p>
+    </div>
+    
+
+    <div class="container">
+
+        <div id="s" class="about-me">
+            <h2 class="section-title">SKILLS</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" data-aos="zoom-in">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSuPVYn2pepVOqaj4Ay0mPfA8J4q3pZlhew&usqp=CAU" alt="Technical Skill 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" data-aos="zoom-in">
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="Technical Skill 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" data-aos="zoom-in">
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="Technical Skill 3">
+                    <div class="card-body">
+                        <h5 class="card-title">DBMS</h5>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+            <div id="p" class="about-me">
+            <h2 class="section-title">PROJECTS</h2>
+        <div id="p" class="project-section">
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXffh7dOvxctXf9vyOQmS1noiVwtghfBkIQ&usqp=CAU" alt="Project Image">
+                    </div>
+                <div class="project-description">
+                <p class="project-description"><b>PROJECT TITLE: Quiz Application Python</b><br>Quiz Application Python is a versatile and interactive software that allows users to create and take quizzes on various topics. With a user-friendly interface, it enables easy quiz creation, editing, and management. Users can test their knowledge, track their scores, and receive instant feedback, making it a fun and engaging learning tool. This application can be customized to suit different educational or recreational purposes, providing an enjoyable and educational experience for users of all ages.</p>
+        </div>
+    </div>
+</div>
+
+<div id="p" class="project-section">
+    <div class="project-item">
+        <div class="project-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShPRj3P-tx7wwXXsMCvMxrzPbobsErkcHN-g&usqp=CAU" alt="Project Image">
+            </div>
+        <div class="project-description">
+        <p class="project-description"><b>PROJECT TITLE: To do List App</b><br>A to-do list app is a productivity tool designed to help users organize and manage their tasks efficiently. It allows users to create, prioritize, and track tasks, ensuring nothing is forgotten. With intuitive features like due dates, reminders, and task categorization, users can stay on top of their daily responsibilities and achieve their goals with ease. Whether it's for personal use or professional projects, a to-do list app is an indispensable tool for staying organized and maximizing productivity.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+        <div id="c" class="contact-info">
+            <section id="about-me">
+                <h2 class="section-title">CONTACT ME!</h2>
+            <p><i class="fas fa-envelope"></i>Email: atlasvettori672@gmail.com</p>
+            <p><i class="fas fa-phone"></i>Phone: +917093688917</p>
+            <p><i class="fas fa-map-marker-alt"></i>Address: Andhra Pradesh, India</p>
+            </section>
+        </div>
+
+        <div class="contact-form">
+            <section id="about-me">
+                <h2 class="section-title">CONTACT FORM</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+            </section>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    
+
+<!-- Add this just before the closing </body> tag -->
+<!-- Add this just before the closing </body> tag -->
+<script src="all-scripts.js"></script>
+  
+  
+  
+
+</body>
+</html>
